@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IoT Student Counter
 
 A smart room occupancy tracking system built with React, FastAPI, and Supabase. Monitor room entries, exits, and real-time occupancy using IoT sensors (Arduino, ESP32, IR sensors).
