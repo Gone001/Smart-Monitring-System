@@ -27,7 +27,7 @@ function Dashboard() {
     fetchHealth()
     const healthInterval = setInterval(fetchHealth, 15000)
 
-    const wsUrl = `ws://${new URL(API_URL).hostname}:${new URL(API_URL).port}/ws`
+    const wsUrl = API_URL.replace(/^http/, 'ws') + '/ws'
     const ws = new WebSocket(wsUrl)
 
     ws.onopen = () => {
